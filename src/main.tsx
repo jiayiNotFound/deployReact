@@ -1,8 +1,8 @@
 import ReactDOM from "react-dom/client";
-import App from "@/App";
-import "@/index.css";
+import App from "./App";
+import "./index.css";
 import { Provider } from "react-redux";
-import { Middleware, configureStore } from "@reduxjs/toolkit";
+import { configureStore, Middleware } from "@reduxjs/toolkit";
 import rootReducer from "./RootState";
 import { api } from "./scenes/state/api";
 import thunk from "redux-thunk";
@@ -22,3 +22,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 
 export type AppStore = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
+
+
