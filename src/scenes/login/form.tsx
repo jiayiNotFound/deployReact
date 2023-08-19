@@ -45,7 +45,7 @@ const Form = () => {
 
     const loggedInResponse = await fetch(url.toString(), {
       method: "GET",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/javascript" },
     });
 
     const loggedIn = await loggedInResponse.json();
