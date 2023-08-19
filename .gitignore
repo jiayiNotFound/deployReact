@@ -79,7 +79,7 @@ Thumbs.db
 node_modules
 dist
 dist-ssr
-*.local
+# *.local
 
 # Editor directories and files
 .vscode/*
